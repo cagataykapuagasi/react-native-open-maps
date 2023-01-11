@@ -210,9 +210,9 @@ export function createMapLink(options) {
 
 	// Assume query is first choice
 	const link = {
-		google: 'https://www.google.com/maps/search/?api=1&',
-		apple: (Platform.OS === 'ios') ? 'maps://?' : 'http://maps.apple.com/?',
-		yandex: 'https://maps.yandex.com/?'
+		google: 'https://www.google.com/maps/search/?api=1&q=',
+		apple: (Platform.OS === 'ios') ? 'maps://?q=' : 'http://maps.apple.com/?q=',
+		yandex: 'https://maps.yandex.com/?q='
 	};
 
 	// Display if lat and longitude is specified
