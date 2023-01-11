@@ -217,7 +217,7 @@ export function createMapLink(options) {
 
 	// Display if lat and longitude is specified
 	if (latitude && longitude) {
-		//link.google = 'https://www.google.com/maps/@?api=1&map_action=map&';
+		link.google = 'https://www.google.com/maps/@?api=1&map_action=map&';
 
 		// If navigate is navigate with lat and lng params
 		if (navigate === true) {
